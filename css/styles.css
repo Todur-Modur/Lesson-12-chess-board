@@ -4,7 +4,8 @@ ul {
 
 .top-letters {
   display: flex;
-  margin-left: 100px;
+  flex-direction: row-reverse;
+  margin-right: 150px;
   padding-top: 40px;
   gap: 90px;
 }
@@ -18,31 +19,27 @@ ul {
 
 .left-numbers {
   display: flex;
-  margin-top: 100px;
   flex-direction: column;
-  gap: 90px;
-}
-
-.right-numbers {
-  display: flex;
-  margin-bottom: 100px;
-  flex-direction: column;
-  gap: 90px;
+  gap: 100px;
+  margin-top: 50px;
+  margin-right: -50px;
 }
 
 .right-numbers {
   padding-right: 40px;
+  margin-left: -80px;
+  margin-bottom: 50px;
   display: flex;
-  margin-top: 100px;
   flex-direction: column-reverse;
   align-items: end;
-  gap: 90px;
+  gap: 100px;
 }
 
 .main-border {
   margin: 0 auto;
   width: 1000px;
   border: 4px solid black;
+  line-height: 0;
 }
 
 .board {
@@ -64,6 +61,10 @@ ul {
   height: 100px;
   width: 100px;
   background-color: black;
+}
+
+.board_numbers {
+  display: flex;
 }
 
 /*# sourceMappingURL=styles.css.map */

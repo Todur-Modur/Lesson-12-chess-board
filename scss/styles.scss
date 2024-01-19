@@ -1,44 +1,47 @@
 ul {
     list-style: none;
 }
-.top-letters{
+
+.top-letters {
     display: flex;
-    margin-left: 100px;
+    flex-direction: row-reverse;
+    margin-right: 150px;
     padding-top: 40px;
     gap: 90px;
 }
-.bottom-letters{
+
+.bottom-letters {
     display: flex;
     margin-left: 100px;
     padding-bottom: 40px;
     gap: 90px;
 }
-.left-numbers{
+
+.left-numbers {
     display: flex;
-    margin-top: 100px;
     flex-direction: column;
-    gap: 90px;
-}
-.right-numbers{
-    display: flex;
-    margin-bottom: 100px;
-    flex-direction: column;
-    gap: 90px;
-}
-.right-numbers{
-    padding-right: 40px;
-    display: flex;
-    margin-top: 100px;
-    flex-direction: column-reverse;
-    align-items: end;
-    gap: 90px;
+    gap: 100px;
+    margin-top: 50px;
+    margin-right: -50px;
 }
 
-.main-border{
+.right-numbers {
+    padding-right: 40px;
+    margin-left: -80px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: end;
+    gap: 100px;
+}
+
+.main-border {
     margin: 0 auto;
     width: 1000px;
     border: 4px solid black;
+    line-height: 0;
 }
+
 .board {
     margin: 0 auto;
     border: 4px solid black;
@@ -46,6 +49,7 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
 }
 
 .white {
@@ -59,6 +63,10 @@ ul {
     height: 100px;
     width: 100px;
     background-color: black;
+}
+
+.board_numbers {
+    display: flex;
 }
 
 // залишилось зорозуміти, як зробити так, щоб бокові цифри не зміщували саму дошку без позішина абсолют))
